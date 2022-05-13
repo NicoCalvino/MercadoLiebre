@@ -1,0 +1,88 @@
+/*Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+/*Estilos generales de todo el body*/
+
+*{
+    padding:0px
+}
+
+body{
+    font-family:'Roboto';
+}
+
+p{
+    font-size:12px
+}
+
+/*Estilos generales de todo el header*/
+header{
+    background-color: #EAC926;
+}
+
+/*Estilos de las listas del header*/
+header nav ul{
+    list-style-type: none;
+    font-size:12px
+}
+
+/*Estilos para sacar estilos a los vinculo*/
+a{
+    color:black;
+    text-decoration: none;
+}
+
+/*Estilos del burger menu*/
+.burger-menu{
+    color:white;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.fa-bars{
+    background-color:#1259c3;
+    padding:30px;
+    border-radius:15%
+}
+
+/*Estilos generales del main*/
+main{
+    background-color: #ebebeb;
+}
+/*Estilos de los diferentes puntos de cada producto*/
+main section h3{
+    font-size:24px
+}
+
+.prod-precios{
+    font-size:18px
+}
+
+.prod-dctos{
+    font-size:16px
+}
+
+.prod-descript{
+    font-size:16px ;
+}
+
+/*Estilos del footer*/
+
+footer ul li{
+    text-align: center;
+    color:#666
+}
+
+.estilo-iconos{
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+
+}

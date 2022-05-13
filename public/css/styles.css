@@ -10,11 +10,13 @@ Verde: #39b54a;
 /*Estilos generales de todo el body*/
 
 *{
-    padding:0px
+    padding:0px;
+    box-sizing: border-box;
 }
 
 body{
     font-family:'Roboto';
+    background-color: #ebebeb
 }
 
 p{
@@ -26,10 +28,19 @@ header{
     background-color: #EAC926;
 }
 
+.second-head{
+    text-align: center;
+}
+
 /*Estilos de las listas del header*/
 header nav ul{
+    display:none;
     list-style-type: none;
     font-size:12px
+}
+
+.banner{
+    width:100%
 }
 
 /*Estilos para sacar estilos a los vinculo*/
@@ -41,36 +52,72 @@ a{
 /*Estilos del burger menu*/
 .burger-menu{
     color:white;
-    font-size: 60px;
+    font-size: 24px;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
 }
 
 .fa-bars{
     background-color:#1259c3;
-    padding:30px;
+    padding:15px;
     border-radius:15%
 }
 
 /*Estilos generales del main*/
 main{
-    background-color: #ebebeb;
+    width:90%;
+    margin:auto;
 }
+
+main section h3 {
+    color:rgb(120, 120, 120)
+}
+
+/*Estilos de las secciones del main*/
+main section article{
+    margin:auto;
+    margin-bottom: 10px;
+}
+
+main section article img{
+    margin:auto;
+    width:100%;
+}
+
+main section article div{
+    background-color: white;
+    width:100%;
+    margin:auto;
+    border-top: 1px solid #ebebeb;
+    padding:15px
+}
+
 /*Estilos de los diferentes puntos de cada producto*/
 main section h3{
     font-size:24px
 }
 
+.fa-truck{
+    color:#39b54a;
+    font-size:14px;
+}
+
 .prod-precios{
-    font-size:18px
+    font-size:18px;
+    margin:0px
 }
 
 .prod-dctos{
-    font-size:16px
+    font-size:16px;
+    color:39b54a;
+    line-height: 0;
+    margin:0px
 }
 
 .prod-descript{
-    font-size:16px ;
+    display:none;
+    font-size:16px;
+    font-weight: normal ;
 }
 
 /*Estilos del footer*/
@@ -84,5 +131,29 @@ footer ul li{
     color:#1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+
+}
+
+/*Media Queries*/
+
+@media(min-width:481px){
+    header nav ul{
+        display:block;
+    }
+
+    .burger-menu{
+        display:none;
+    }
+    
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    .prod-descript{
+        display:block;
+    }
+}
+
+@media(min-width:769px){
 
 }

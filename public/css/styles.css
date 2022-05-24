@@ -45,7 +45,7 @@ header .input{
 
 header .input input{
     width:90%;
-    border-radius: 10%;
+    border-radius: 5px;
     height:30px
 }
 
@@ -95,8 +95,7 @@ main section h3 {
 
 /*Estilos de las secciones del main*/
 
-main section article{
-    margin:auto;
+main section  article{
     margin-bottom: 10px;
 }
 
@@ -133,25 +132,28 @@ main section article i{
 
 /*Estilos de los diferentes puntos de cada producto*/
 main section h3{
-    font-size:24px
+    font-size:24px;
+    margin-top:20px
 }
 
 .fa-truck{
     color:#39b54a;
     font-size:14px;
+    transition: all 450ms
 }
 
 .prod-precios{
     font-size:18px;
     margin:0px;
-    width:30%;
+    margin-right: 5px;
+    /*width:30%;*/
 }
 
 .prod-dctos{
     font-size:16px;
-    color:39b54a;
+    color:#39b54a;
     margin:0px;
-    width:70%;
+    /*width:70%;*/
 }
 
 .prod-descript{
@@ -183,7 +185,10 @@ footer ul li p, h3{
     font-size: 2em;
     margin: 50px;
     margin-bottom: 10px;
+}
 
+#copyright{
+    margin: 20px 0px
 }
 
 /*Media Queries*/
@@ -227,26 +232,50 @@ footer ul li p, h3{
         display:none;
     }
     
-    main section article{
+    .articulo-venta:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     
-    .prod-descript{
+    .articulo-venta:hover .prod-descript{
         display:block;
+        width:100%;
     }
+
+    .articulo-venta:hover .fa-truck{
+        transform: rotate(-90deg);
+    }
+
     main section .productos {
         display: flex;
         flex-wrap: wrap;
         justify-content:space-around;
+        align-items:flex-start;
     }
     
     main section div article{
-        width:45%
+        width:45%;
     }
+
+
 }
 
 @media(min-width:769px){
     main section div article{
         width:22%
+    }
+
+    /*Estilos del footer*/
+
+    footer ul{
+        display:flex;
+        justify-content: space-around;
+    }
+
+    footer ul li{
+        padding:10px 100px
+    }
+
+    .estilo-iconos:hover{
+        color:#5689d6;
     }
 }
